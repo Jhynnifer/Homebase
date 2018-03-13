@@ -11,3 +11,10 @@ require get_template_directory() . '/functions/widgets.php';
 require get_template_directory() . '/functions/search-widget.php';
 require get_template_directory() . '/functions/index-pagination.php';
 require get_template_directory() . '/functions/single-split-pagination.php';
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );

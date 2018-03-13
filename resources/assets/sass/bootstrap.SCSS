@@ -1,0 +1,36 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+//themes
+$theme-colors: (
+        "jcc-purple": #3c2e61,
+        "jcc-blue": #2889b2,
+        "jcc-aqua": #64f9e5,
+        "jcc-crimson": #af0538,
+        "jcc-merlot": #6c0b3d,
+);
+
+//spacing
+$spacers: (
+        6: ($spacer * 4),
+        7: ($spacer * 5),
+        8: ($spacer * 6),
+        9: ($spacer * 7),
+        10: ($spacer * 8),
+);
+
+//buttons
+$btn-border-width: 2px;
+
+//fonts
+$h1-font-size: $font-size-base * 2.2;
+$font-family-sans-serif: 'Krona One', sans-serif;
+$font-family-base: 'roboto', sans-serif;
+
+
+//grid
+$grid-gutter-width: 20px;
+
+//bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+

@@ -13607,9 +13607,9 @@ window.Popper = __webpack_require__(3).default;
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(4);
+    window.$ = window.jQuery = __webpack_require__(4);
 
-  __webpack_require__(14);
+    __webpack_require__(14);
 } catch (e) {}
 
 /**
@@ -13656,29 +13656,41 @@ if (token) {
 //mousetrap
 __webpack_require__(35);
 
+/**!
+ * b4st JS
  */
 
-  'use strict';
+(function ($) {
 
-  $(document).ready(function () {
+    'use strict';
 
-    // Comments
+    $(document).ready(function () {
 
-    $('.commentlist li').addClass('card');
-    $('.comment-reply-link').addClass('btn btn-secondary');
+        // Comments
 
-    // Forms
+        $('.commentlist li').addClass('card');
+        $('.comment-reply-link').addClass('btn btn-secondary');
 
-    $('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
-    $('input[type=submit]').addClass('btn btn-primary');
+        // Forms
 
-    // Pagination fix for ellipsis
+        $('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
+        $('input[type=submit]').addClass('btn btn-primary');
 
-    $('.pagination .dots').addClass('page-link').parent().addClass('disabled');
+        // Pagination fix for ellipsis
 
-    // You can put your own code in here
-  });
+        $('.pagination .dots').addClass('page-link').parent().addClass('disabled');
+
+        // You can put your own code in here
+    });
 })(jQuery);
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
 /***/ }),
 /* 12 */
